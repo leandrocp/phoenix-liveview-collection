@@ -5,7 +5,7 @@
 </div>
 
 # Phoenix LiveView Collection
-<pre>Demos and experiments that people are building.</pre>
+<pre>Amazing demos and experiments that people are building with Phoenix LiveView.</pre>
 
 * [Chris McCord examples](https://twitter.com/chris_mccord/status/1106291353670045696) - [code](https://github.com/chrismccord/phoenix_live_view_example)
 * [Flappy Bird clone](https://twitter.com/moomerman/status/1111711999963086849) - [demo](https://flappy-phoenix.herokuapp.com) / [code](https://github.com/moomerman/flappy-phoenix)
