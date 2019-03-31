@@ -15,3 +15,6 @@
 * [WikiLiveView - recent events on wikipedia.com](https://twitter.com/FelixKlement/status/1111654030948925440) - [demo](https://darkslategray-dental-vicuna.gigalixirapp.com) / [code](https://github.com/fklement/wikipedia_live_view)
 * [Undo](https://twitter.com/joerichsen/status/1111653584322658304) - [code](https://github.com/joerichsen/phoenix_live_view_example/blob/undo_example/lib/demo_web/live/undo_live.ex)
 * [Logic simulator viewer](https://twitter.com/1stAvenger/status/1111740746036592640)
+* [Doom's fire](https://twitter.com/allmonty/status/1110599037890281472) - [demo](https://elixir-doom-fire.herokuapp.com) / [code](https://github.com/allmonty/elixir-live-doom-fire)
+* [SVG LiveView](https://twitter.com/lucianparvu/status/1109087821581742080)
+* [Server-side calculator](https://twitter.com/smeade/status/1107180735939543041) - [code](https://github.com/smeade/phoenix_live_view_example)
