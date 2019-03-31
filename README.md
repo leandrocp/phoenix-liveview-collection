@@ -25,3 +25,4 @@
 * [Re-computing and re-rendering over 200 rows of data every 1/10 of a second](https://twitter.com/geolessel/status/1108382138192134144)
 * [Table editor](https://twitter.com/pihurt/status/1106920643604475907) - [demo](https://liveview.cleverapps.io/tables) / [code](https://github.com/hurty/phoenix_live_view_example/blob/master/lib/demo_web/live/tables_live.ex)
 * [Adventure Capitalist clone](https://twitter.com/ericteubert/status/1107290579396907008) - [code](https://github.com/eteubert/open_adventure_capitalist/blob/master/lib/open_adventure_capitalist_web/live/game_live.ex)
+* [Push live updates](https://twitter.com/sm_debenedetto/status/1107336700282527746)
