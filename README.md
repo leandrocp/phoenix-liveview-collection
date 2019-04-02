@@ -26,4 +26,4 @@
 * [Table editor](https://twitter.com/pihurt/status/1106920643604475907) - [demo](https://liveview.cleverapps.io/tables) / [code](https://github.com/hurty/phoenix_live_view_example/blob/master/lib/demo_web/live/tables_live.ex)
 * [Adventure Capitalist clone](https://twitter.com/ericteubert/status/1107290579396907008) - [code](https://github.com/eteubert/open_adventure_capitalist/blob/master/lib/open_adventure_capitalist_web/live/game_live.ex)
 * [Push live updates](https://twitter.com/sm_debenedetto/status/1107336700282527746)
-* [ObserverLive](https://twitter.com/_zorbash/status/1112859727845904385) - [demo](https://t.co/cvFS7QWWiW) / [code](https://t.co/ArYuKvEUkz)
+* [ObserverLive](https://twitter.com/_zorbash/status/1112859727845904385) - [demo](https://liveview.zorbash.com) / [code](https://github.com/zorbash/observer_live)
