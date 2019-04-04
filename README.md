@@ -31,3 +31,4 @@
 * [Side by side with Nodejs' Socket IO](https://twitter.com/gabrielgiord/status/1113236638774308864)
 * [BlackJack Game](https://twitter.com/DanCarlito/status/1113586521762930688) - [demo](https://polite-angelic-beaver.gigalixirapp.com) / [code](https://github.com/dorilla/live_view_black_jack)
 * [SeaBattle Game](https://twitter.com/AlexanderTukta1/status/1113722931845242883) - [demo](https://radiant-plateau-73240.herokuapp.com) / [code](https://github.com/Sanchos01/Phoenix-Sea-Battle)
+* [Rubular clone](https://twitter.com/clarkkampfe/status/1110910055535312900) - [code](https://github.com/ckampfe/rere/blob/master/lib/rere_web/live/rere_live.ex)
