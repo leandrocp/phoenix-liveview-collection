@@ -30,3 +30,4 @@
 * [Match Game](https://twitter.com/toranb/status/1113406660175958017) - [demo](https://elixirmatch.com) / [code](https://github.com/toranb/elixir-match/commit/bac39b8da84f3e672021e9d168589204a3a7682d)
 * [Side by side with Nodejs' Socket IO](https://twitter.com/gabrielgiord/status/1113236638774308864)
 * [BlackJack Game](https://twitter.com/DanCarlito/status/1113586521762930688) - [demo](https://polite-angelic-beaver.gigalixirapp.com) / [code](https://github.com/dorilla/live_view_black_jack)
+* [SeaBattle Game](https://twitter.com/AlexanderTukta1/status/1113722931845242883) - [demo](https://radiant-plateau-73240.herokuapp.com) / [code](https://github.com/Sanchos01/Phoenix-Sea-Battle)
