@@ -7,16 +7,23 @@
 # Phoenix LiveView Collection
 <pre>Amazing demos and experiments that people are building with Phoenix LiveView.</pre>
 
-#### Flappy Bird Clone
-<img src="https://pbs.twimg.com/card_img/1114248425304993792/oRopLgLN?format=jpg&name=600x314" width=300>
-<br>
-<a href="https://twitter.com/moomerman/status/1111711999963086849"><img src="media/twitter.png" width=28></a>
-<a href="https://github.com/moomerman/flappy-phoenix"><img src="media/github.png" width=28></a>
-
+_Click on the preview image to play a demo, when available._
 
 * [Chris McCord examples](https://twitter.com/chris_mccord/status/1106291353670045696) - [code](https://github.com/chrismccord/phoenix_live_view_example)
-* [Flappy Bird clone](https://twitter.com/moomerman/status/1111711999963086849) - [demo](https://flappy-phoenix.herokuapp.com) / [code](https://github.com/moomerman/flappy-phoenix)
-* [Form with multiple steps and progression indicator](https://twitter.com/_AlexGaribay/status/1111641314955849728)
+
+## Flappy Bird Clone
+<a href="https://twitter.com/moomerman/status/1111711999963086849"><img src="media/twitter.png" width="24"></a>
+<a href="https://github.com/moomerman/flappy-phoenix"><img src="media/github.png" width="24"></a>
+
+<a href="https://flappy-phoenix.herokuapp.com">
+  <img src="https://pbs.twimg.com/card_img/1114248425304993792/oRopLgLN?format=jpg&name=600x314" width="300">
+</a>
+
+## Form with multiple steps and progression indicator
+<a href="https://twitter.com/_AlexGaribay/status/1111641314955849728"><img src="media/twitter.png" width="24"></a>
+<video preload="auto" playsinline="" poster="https://pbs.twimg.com/tweet_video_thumb/D21XrerWsAEuiG5.jpg" src="https://video.twimg.com/tweet_video/D21XrerWsAEuiG5.mp4" type="video/mp4" width="300"></video>
+
+
 * [Table pagination, filtering, and sorting](https://twitter.com/joerichsen/status/1109122286139965441) - [code](https://github.com/joerichsen/phoenix_live_view_example/blob/table_example/lib/demo_web/live/table_live.ex)
 * [Synthetic load generator + ad-hoc scheduler observer](https://twitter.com/sasajuric/status/1111987993529729025) - [code](https://github.com/sasa1977/demo_system)
 * [Hippo Game](https://twitter.com/miladamilli/status/1109523142429626374) - [demo](https://elegant-monstrous-planthopper.gigalixirapp.com) / [code](https://github.com/miladamilli/hippo_game_live/)
