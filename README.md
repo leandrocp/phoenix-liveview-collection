@@ -34,3 +34,4 @@
 * [Rubular clone](https://twitter.com/clarkkampfe/status/1110910055535312900) - [code](https://github.com/ckampfe/rere/blob/master/lib/rere_web/live/rere_live.ex)
 * [Real-time chat](https://twitter.com/CassiusPacheco/status/1112015260880240640) - [demo](https://www.dropbox.com/s/nvr1f2tkmyo41kr/live_chat.mp4) / [code](https://github.com/CassiusPacheco/live_chat)
 * [Live HTML/CSS](https://twitter.com/e110ca11272837c/status/1115181933539893248) - [code](https://twitter.com/e110ca11272837c/status/1115182433723244544)
+* [Live IMU](https://twitter.com/joshnuss/status/1114761613985353728) - [code](https://github.com/joshnuss/live_imu)
