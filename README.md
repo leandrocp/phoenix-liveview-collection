@@ -7,6 +7,13 @@
 # Phoenix LiveView Collection
 <pre>Amazing demos and experiments that people are building with Phoenix LiveView.</pre>
 
+#### Flappy Bird Clone
+<img src="https://pbs.twimg.com/card_img/1114248425304993792/oRopLgLN?format=jpg&name=600x314" width=300>
+<br>
+<a href="https://twitter.com/moomerman/status/1111711999963086849"><img src="media/twitter.png" width=28></a>
+<a href="https://github.com/moomerman/flappy-phoenix"><img src="media/github.png" width=28></a>
+
+
 * [Chris McCord examples](https://twitter.com/chris_mccord/status/1106291353670045696) - [code](https://github.com/chrismccord/phoenix_live_view_example)
 * [Flappy Bird clone](https://twitter.com/moomerman/status/1111711999963086849) - [demo](https://flappy-phoenix.herokuapp.com) / [code](https://github.com/moomerman/flappy-phoenix)
 * [Form with multiple steps and progression indicator](https://twitter.com/_AlexGaribay/status/1111641314955849728)
