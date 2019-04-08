@@ -35,3 +35,4 @@
 * [Real-time chat](https://twitter.com/CassiusPacheco/status/1112015260880240640) - [demo](https://www.dropbox.com/s/nvr1f2tkmyo41kr/live_chat.mp4) / [code](https://github.com/CassiusPacheco/live_chat)
 * [Live HTML/CSS](https://twitter.com/e110ca11272837c/status/1115181933539893248) - [code](https://twitter.com/e110ca11272837c/status/1115182433723244544)
 * [Live IMU](https://twitter.com/joshnuss/status/1114761613985353728) - [code](https://github.com/joshnuss/live_imu)
+* [Bluetooth Low Energy HeartRate demo](https://twitter.com/ken_hamada/status/1114535963349225472) - [code](https://github.com/khamada611/ble_live_sample)
