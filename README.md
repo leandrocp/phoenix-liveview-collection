@@ -21,8 +21,10 @@ _Click on the preview image to play a demo, when available._
 
 ## Form with multiple steps and progression indicator
 <a href="https://twitter.com/_AlexGaribay/status/1111641314955849728"><img src="media/twitter.png" width="24"></a>
-<video preload="auto" playsinline="" poster="https://pbs.twimg.com/tweet_video_thumb/D21XrerWsAEuiG5.jpg" src="https://video.twimg.com/tweet_video/D21XrerWsAEuiG5.mp4" type="video/mp4" width="300"></video>
 
+<video controls="true" allowfullscreen="true" poster="https://pbs.twimg.com/tweet_video_thumb/D21XrerWsAEuiG5.jpg" width="300">
+  <source src="https://video.twimg.com/tweet_video/D21XrerWsAEuiG5.mp4" type="video/mp4">
+</video>
 
 * [Table pagination, filtering, and sorting](https://twitter.com/joerichsen/status/1109122286139965441) - [code](https://github.com/joerichsen/phoenix_live_view_example/blob/table_example/lib/demo_web/live/table_live.ex)
 * [Synthetic load generator + ad-hoc scheduler observer](https://twitter.com/sasajuric/status/1111987993529729025) - [code](https://github.com/sasa1977/demo_system)
