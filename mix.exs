@@ -41,7 +41,8 @@ defmodule LiveViewCollection.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
       {:httpotion, "~> 3.1"},
-      {:floki, "~> 0.21"}
+      {:floki, "~> 0.21"},
+      {:yaml_elixir, "~> 2.4"}
     ]
   end
 end
