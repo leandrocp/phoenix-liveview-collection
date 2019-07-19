@@ -6,8 +6,7 @@ defmodule LiveViewCollectionWeb.Endpoint do
     longpoll: false
 
   socket "/live", Phoenix.LiveView.Socket,
-    websocket: [timeout: 45_000],
-    longpoll: false
+    websocket: [timeout: 45_000]
 
   # Serve at "/" the static files from "priv/static" directory.
   #
