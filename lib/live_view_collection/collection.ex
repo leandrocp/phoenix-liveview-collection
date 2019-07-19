@@ -29,8 +29,8 @@ defmodule LiveViewCollection.Collection do
   defp resolve_tweets(collection) do
     resolve_item = fn {name, tweet_url} ->
       Logger.info("Loading #{name}")
-      # {name, tweet_url}
-      {name, Twitter.embed_html(tweet_url)}
+      {name, tweet_url}
+      # {name, Twitter.embed_html(tweet_url)}
     end
 
     collection
