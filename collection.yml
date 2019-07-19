@@ -1,6 +1,12 @@
+- name: "Chris McCord examples"
+  tweet_url: "https://twitter.com/chris_mccord/status/1106291353670045696"
 - name: "Flappy Bird Clone"
   tweet_url: "https://twitter.com/moomerman/status/1111711999963086849"
 - name: "Form with multiple steps and progression indicator"
   tweet_url: "https://twitter.com/_AlexGaribay/status/1111641314955849728"
+- name: "Table pagination, filtering, and sorting"
+  tweet_url: "https://twitter.com/joerichsen/status/1109122286139965441"
+- name: "Synthetic load generator + ad-hoc scheduler observer"
+  tweet_url: "https://twitter.com/sasajuric/status/1111987993529729025"
 
 

@@ -25,8 +25,9 @@ liveSocket.connect();
 
 jQuery(document).ready(function($){
   function update() {
-    console.log("updated");
-    twttr.widgets.load();
+    twttr.widgets.load(
+      document.getElementById("collection")
+    );
   }
 
   $(document).on("phx:update", update);

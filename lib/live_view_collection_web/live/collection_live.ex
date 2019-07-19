@@ -2,15 +2,16 @@ defmodule LiveViewCollectionWeb.CollectionLive do
   use Phoenix.LiveView
   alias LiveViewCollection.Collection
 
-
   def render(assigns) do
     ~L"""
     <form phx-change="search"><input type="text" name="query" value="<%= @query %>" placeholder="Search..." /></form>
 
-    <%= for {name, tweet} <- @collection do %>
-      <%= name %>
-      <%= Phoenix.HTML.raw(tweet) %>
-    <% end %>
+    <div id="collection">
+      <%= for {name, tweet} <- @collection do %>
+        <%= name %>
+        <%= Phoenix.HTML.raw(tweet) %>
+      <% end %>
+    </div>
     """
   end
 
