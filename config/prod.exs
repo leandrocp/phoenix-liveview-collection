@@ -13,7 +13,8 @@ config :live_view_collection, LiveViewCollectionWeb.Endpoint,
   url: [host: "live-view-collection.herokuapp.com", port: System.get_env("PORT", "443"), scheme: "https"],
   cache_static_manifest: "priv/static/cache_manifest.json",
   secret_key_base: System.fetch_env!("SECRET_KEY_BASE"),
-  force_ssl: [rewrite_on: [:x_forwarded_proto]]
+  force_ssl: [rewrite_on: [:x_forwarded_proto]],
+  server: true
 
 # Do not print debug messages in production
 config :logger, level: :info
