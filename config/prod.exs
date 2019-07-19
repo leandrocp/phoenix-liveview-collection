@@ -11,7 +11,7 @@ use Mix.Config
 # before starting your production server.
 config :live_view_collection, LiveViewCollectionWeb.Endpoint,
   http: [:inet6, port: System.get_env("PORT", "4000")],
-  url: [host: "live-view-collection.herokuapp.com", port: 443, "443"), scheme: "https"],
+  url: [host: "live-view-collection.herokuapp.com", port: 443, scheme: "https"],
   secret_key_base: System.fetch_env!("SECRET_KEY_BASE"),
   force_ssl: [rewrite_on: [:x_forwarded_proto]]
 
