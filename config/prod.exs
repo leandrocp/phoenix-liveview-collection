@@ -10,11 +10,10 @@ use Mix.Config
 # which you should run after static files are built and
 # before starting your production server.
 config :live_view_collection, LiveViewCollectionWeb.Endpoint,
-  url: [host: "live-view-collection.herokuapp.com", port: System.get_env("PORT", "443"), scheme: "https"],
-  cache_static_manifest: "priv/static/cache_manifest.json",
+  http: [:inet6, port: System.get_env("PORT", "4000")],
+  url: [host: "live-view-collection.herokuapp.com", port: 443, "443"), scheme: "https"],
   secret_key_base: System.fetch_env!("SECRET_KEY_BASE"),
-  force_ssl: [rewrite_on: [:x_forwarded_proto]],
-  server: true
+  force_ssl: [rewrite_on: [:x_forwarded_proto]]
 
 # Do not print debug messages in production
 config :logger, level: :info
