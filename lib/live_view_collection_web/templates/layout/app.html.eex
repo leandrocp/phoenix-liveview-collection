@@ -13,7 +13,7 @@
       <section class="container">
         <nav role="navigation">
           <ul>
-            <li>Phoenix LiveView Collection</li>
+            <li>LiveView Collection</li>
           </ul>
         </nav>
         <a href="/" class="phx-logo">

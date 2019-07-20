@@ -76,7 +76,7 @@ defmodule LiveViewCollectionWeb.CollectionLive do
 
   defp number_of_pages(%{query: query, page_size: page_size}) do
     collection_length = query |> Collection.filter() |> length()
-    pages = trunc(collection_length / page_size)
+    pages = (collection_length / page_size) |> Float.ceil() |> round()
     if pages <= 1, do: [1], else: 1..pages
   end
 end
