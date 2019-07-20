@@ -1,4 +1,5 @@
 defmodule LiveViewCollectionWeb.CollectionLive do
+  require Logger
   use Phoenix.LiveView
   alias LiveViewCollection.Collection
 
@@ -7,7 +8,7 @@ defmodule LiveViewCollectionWeb.CollectionLive do
     <form phx-change="search"><input type="text" name="query" value="<%= @query %>" placeholder="Search..." /></form>
 
     <div id="collection">
-      <%= for %{"name" => name, "tweet_html" => tw_html, "github_url" => gh_url, "github_repo" => gh_repo} <- data(assigns) do %>
+      <%= for %{"name" => name, "tweet_html" => tw_html, "github_url" => gh_url, "github_repo" => gh_repo} <- @collection do %>
         <h2 class="collection__name"><%= name %></h2>
         <%= Phoenix.HTML.raw(tw_html) %>
 	<div class="collection__gh_repo">
@@ -39,7 +40,7 @@ defmodule LiveViewCollectionWeb.CollectionLive do
   end
 
   def mount(_session, socket) do
-    {:ok, assign(socket, collection: Collection.all(), query: nil, page: 1, page_size: 5)}
+    {:ok, assign(socket, collection: Collection.resolve(), query: "", page: 1, page_size: 10)}
   end
 
   def handle_event("search", %{"query" => query}, socket) do
@@ -55,15 +56,14 @@ defmodule LiveViewCollectionWeb.CollectionLive do
   end
 
   def handle_params(params, _url, socket) do
-    query = params["query"]
-    page = String.to_integer(params["page"] || "1")
-    page_size = String.to_integer(params["page_size"] || "5")
+    Logger.info(fn -> "handle_params: #{inspect(params)}" end)
 
-    {:noreply, assign(socket, query: query, page: page, page_size: page_size)}
-  end
+    query = Map.get(params, "query", "")
+    page = params |> Map.get("page", "1") |> String.to_integer()
+    page_size = params |> Map.get("page_size", "10") |> String.to_integer()
+    collection = Collection.resolve(query, page, page_size)
 
-  def data(%{query: query, page: page, page_size: page_size}) do
-    query |> Collection.filter() |> paginate(page, page_size)
+    {:noreply, assign(socket, collection: collection, query: query, page: page, page_size: page_size)}
   end
 
   defp redirect_attrs(socket, attrs) do
@@ -79,6 +79,4 @@ defmodule LiveViewCollectionWeb.CollectionLive do
     pages = trunc(collection_length / page_size)
     if pages <= 1, do: [1], else: 1..pages
   end
-
-  defp paginate(collection, page, page_size), do: collection |> Enum.slice((page - 1) * page_size, page_size)
 end
