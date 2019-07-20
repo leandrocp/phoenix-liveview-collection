@@ -17,8 +17,8 @@ defmodule LiveViewCollection.Collection do
     {:ok, regex} = Regex.compile(query, "i")
 
     Agent.get(__MODULE__, fn collection ->
-      Enum.filter(collection, fn {name, html} ->
-        content = name <> " " <> html
+      Enum.filter(collection, fn %{"name" => name, "tweet_html" => tw_html} ->
+        content = name <> " " <> tw_html
         String.match?(content, regex)
       end)
     end)
