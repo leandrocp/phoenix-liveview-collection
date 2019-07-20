@@ -1,21 +1,203 @@
 - name: "Chris McCord examples"
   tweet_url: "https://twitter.com/chris_mccord/status/1106291353670045696"
+  github_url: "https://github.com/chrismccord/phoenix_live_view_example"
+
 - name: "Flappy Bird Clone"
   tweet_url: "https://twitter.com/moomerman/status/1111711999963086849"
+  github_url: "https://github.com/moomerman/flappy-phoenix"
+
 - name: "Form with multiple steps and progression indicator"
   tweet_url: "https://twitter.com/_AlexGaribay/status/1111641314955849728"
+  github_url:
+
 - name: "Table pagination, filtering, and sorting"
   tweet_url: "https://twitter.com/joerichsen/status/1109122286139965441"
+  github_url: "https://github.com/joerichsen/phoenix_live_view_example/blob/table_example/lib/demo_web/live/table_live.ex"
+
 - name: "Synthetic load generator + ad-hoc scheduler observer"
   tweet_url: "https://twitter.com/sasajuric/status/1111987993529729025"
+  github_url: "https://github.com/sasa1977/demo_system"
+
 - name: "Hippo Game"
   tweet_url: "https://twitter.com/miladamilli/status/1109523142429626374"
+  github_url: "https://github.com/miladamilli/hippo_game_live"
+
 - name: "WikiLiveView"
   tweet_url: "https://twitter.com/FelixKlement/status/1111654030948925440"
+  github_url: "https://github.com/fklement/wikipedia_live_view"
+
 - name: "Undo"
   tweet_url: "https://twitter.com/joerichsen/status/1111653584322658304"
+  github_url: "https://github.com/joerichsen/phoenix_live_view_example/blob/undo_example/lib/demo_web/live/undo_live.ex"
+
 - name: "Logic Simulator viewer"
   tweet_url: "https://twitter.com/1stAvenger/status/1111740746036592640"
+  github_url:
+
 - name: "Doom's fire"
   tweet_url: "https://twitter.com/allmonty/status/1110599037890281472"
+  github_url: "https://github.com/allmonty/elixir-live-doom-fire"
 
+- name: "SVG LiveView"
+  tweet_url: "https://twitter.com/lucianparvu/status/1109087821581742080"
+  github_url:
+
+- name: "SVG LiveView 2"
+  tweet_url: "https://twitter.com/mmmries/status/1117303569974042624"
+  github_url: "https://github.com/mmmries/showoff/blob/master/lib/showoff_web/live/scratchpad_live.ex"
+
+- name: "Server-side calculator"
+  tweet_url: "https://twitter.com/smeade/status/1107180735939543041"
+  github_url: "https://github.com/smeade/phoenix_live_view_example/blob/master/lib/demo_web/live/calc_live/index.ex"
+
+- name: "Todos"
+  tweet_url: "https://twitter.com/smeade/status/1106607520666148864"
+  github_url: "https://github.com/smeade/phoenix_live_view_example_todos"
+
+- name: "Live Tinkering"
+  tweet_url: "https://twitter.com/alephnaught2tog/status/1106736339502989312"
+  github_url: "https://github.com/aleph-naught2tog/live_tinkering"
+
+- name: "Word Game"
+  tweet_url: "https://twitter.com/hokram/status/1108464747937255426"
+  github_url:
+
+- name: "Re-computing and re-rendering over 200 rows"
+  tweet_url: "https://twitter.com/geolessel/status/1108382138192134144"
+  github_url:
+
+- name: "Table editor"
+  tweet_url: "https://twitter.com/pihurt/status/1106920643604475907"
+  github_url: "https://github.com/hurty/phoenix_live_view_example/blob/master/lib/demo_web/live/tables_live.ex"
+
+- name: "Adventure Capitalist clone"
+  tweet_url: "https://twitter.com/ericteubert/status/1107290579396907008"
+  github_url: "https://github.com/eteubert/open_adventure_capitalist/blob/master/lib/open_adventure_capitalist_web/live/game_live.ex"
+
+- name: "Push live updates"
+  tweet_url: "https://twitter.com/sm_debenedetto/status/1107336700282527746"
+  github_url:
+
+- name: "ObserverLive"
+  tweet_url: "https://twitter.com/_zorbash/status/1112859727845904385"
+  github_url: "https://github.com/zorbash/observer_live"
+
+- name: "Match game"
+  tweet_url: "https://twitter.com/toranb/status/1113406660175958017"
+  github_url: "https://github.com/toranb/elixir-match/commit/bac39b8da84f3e672021e9d168589204a3a7682d"
+
+- name: "BlackJack game"
+  tweet_url: "https://twitter.com/DanCarlito/status/1113586521762930688"
+  github_url: "https://github.com/dorilla/live_view_black_jack"
+
+- name: "SeaBattle game"
+  tweet_url: "https://twitter.com/AlexanderTukta1/status/1113722931845242883"
+  github_url: "https://github.com/Sanchos01/Phoenix-Sea-Battle"
+
+- name: "Rubular clone"
+  tweet_url: "https://twitter.com/clarkkampfe/status/1110910055535312900"
+  github_url: "https://github.com/ckampfe/rere/blob/master/lib/rere_web/live/rere_live.ex"
+
+- name: "Real-time chat"
+  tweet_url: "https://twitter.com/CassiusPacheco/status/1112015260880240640"
+  github_url: "https://github.com/CassiusPacheco/live_chat"
+
+- name: "Live HTML/CSS"
+  tweet_url: "https://twitter.com/e110ca11272837c/status/1115181933539893248"
+  github_url:
+
+- name: "Live IMU sensor"
+  tweet_url: "https://twitter.com/joshnuss/status/1114761613985353728"
+  github_url: "https://github.com/joshnuss/live_imu"
+
+- name: "Bluetooth Low Energy HeartRate demo"
+  tweet_url: "https://twitter.com/ken_hamada/status/1114535963349225472"
+  github_url: "https://github.com/khamada611/ble_live_sample"
+
+- name: "Real-time communication with Zoom API"
+  tweet_url: "https://twitter.com/kblake/status/1113936890661457921"
+  github_url:
+
+- name: "BreakoutEx (breakout clone)"
+  tweet_url: "https://twitter.com/ElixirLibHunt/status/1116946024617005056"
+  github_url: "https://github.com/neslinesli93/breakoutex"
+
+- name: "Bike comparison"
+  tweet_url: "https://twitter.com/andrielfn/status/1116874613584220160"
+  gist_url: "https://gist.github.com/andrielfn/6bbf0bf7fa644bfad304752bfae081f9"
+
+- name: "Calendar component"
+  tweet_url: "https://twitter.com/nblanco_fr/status/1117889640491413504"
+  github_url: "https://github.com/nicolasblanco/booking_calendar/blob/master/lib/booking_calendar_web/live/calendar_live.ex"
+
+- name: "Kubernetes dashboard"
+  tweet_url: "https://twitter.com/dmitriid/status/1118799470412611586"
+  github_url: "https://github.com/dmitriid/phreak"
+
+- name: "Markdown Live"
+  tweet_url: "https://twitter.com/elixirphoenix/status/1120774563611254785"
+  github_url: "https://github.com/nickdichev/markdown-live"
+
+- name: "Ant Farm"
+  tweet_url: "https://twitter.com/bigardone/status/1111161896177201152"
+  github_url: "https://github.com/bigardone/phoenix-liveview-ant-farm"
+
+- name: "UX keypad"
+  tweet_url: "https://twitter.com/ponyesteves/status/1125395620121010176"
+  gist_url: "https://gist.github.com/ponyesteves/372cf186665ab464413096fd3855f0ca"
+
+- name: "Chat App"
+  tweet_url: "https://twitter.com/sm_debenedetto/status/1125024922030497792"
+  github_url: "https://github.com/SophieDeBenedetto/phat"
+
+- name: "Functional data structures"
+  tweet_url: "https://twitter.com/kayserzl/status/1124083298580430849"
+  github_url: "https://github.com/zkayser/pfds_visualizations"
+
+- name: "RFID Reader"
+  tweet_url: "https://twitter.com/vtim/status/1123982142684504068"
+  github_url:
+
+- name: "LetterSoup Game (Boggle clone)"
+  tweet_url: "https://twitter.com/_martinS_/status/1123775286863192065"
+  github_url: "https://github.com/martinstannard/soup"
+
+- name: "Keeping notes"
+  tweet_url: "https://twitter.com/joaomdmoura/status/1123051722497232897"
+  github_url:
+
+- name: "Game of Life"
+  tweet_url: "https://twitter.com/backa/status/1111623881670959106"
+  github_url:
+
+- name: "Falling Tiles game"
+  tweet_url: "https://twitter.com/atyborska93/status/1127562362293293056"
+  github_url: "https://github.com/angelikatyborska/falling_blocks"
+
+- name: "Kanban board"
+  tweet_url: "https://twitter.com/hubertlepicki/status/1128234844780138496"
+  github_url: "https://github.com/amberbit/board"
+
+- name: "Trivia Multiplayer"
+  tweet_url: "https://twitter.com/ramortegui/status/1132037413453291520"
+  github_url: "https://github.com/ramortegui/phoenix_trivia"
+
+- name: "Monitoring dashboard"
+  tweet_url: "https://twitter.com/kerryb/status/1134414659660988416"
+  github_url:
+
+- name: "Multi-step Form"
+  tweet_url: "https://twitter.com/tuacker/status/1134374836338352128"
+  github_url: "https://github.com/tuacker/phoenix_live_view_form_steps/"
+
+- name: "Piano roll"
+  tweet_url: "https://twitter.com/thibaut_barrere/status/1135477796908744705"
+  github_url:
+
+- name: "Star Polygon demo"
+  tweet_url: "https://twitter.com/mudphone/status/1140312333543043072"
+  github_url:
+
+- name: "HackerNews clone"
+  tweet_url: "https://twitter.com/ashishwadekar/status/1143596972345049088"
+  github_url: "https://github.com/ashishwadekar/live_hacker_news"
