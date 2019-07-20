@@ -124,6 +124,7 @@
 
 - name: "Bike comparison"
   tweet_url: "https://twitter.com/andrielfn/status/1116874613584220160"
+  github_url:
   gist_url: "https://gist.github.com/andrielfn/6bbf0bf7fa644bfad304752bfae081f9"
 
 - name: "Calendar component"
@@ -144,6 +145,7 @@
 
 - name: "UX keypad"
   tweet_url: "https://twitter.com/ponyesteves/status/1125395620121010176"
+  github_url:
   gist_url: "https://gist.github.com/ponyesteves/372cf186665ab464413096fd3855f0ca"
 
 - name: "Chat App"

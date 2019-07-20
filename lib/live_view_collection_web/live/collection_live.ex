@@ -7,9 +7,12 @@ defmodule LiveViewCollectionWeb.CollectionLive do
     <form phx-change="search"><input type="text" name="query" value="<%= @query %>" placeholder="Search..." /></form>
 
     <div id="collection">
-      <%= for {name, tweet} <- data(assigns) do %>
-        <%= name %>
-        <%= Phoenix.HTML.raw(tweet) %>
+      <%= for %{"name" => name, "tweet_html" => tw_html, "github_url" => gh_url, "github_repo" => gh_repo} <- data(assigns) do %>
+        <h2 class="collection__name"><%= name %></h2>
+        <%= Phoenix.HTML.raw(tw_html) %>
+	<div class="collection__gh_repo">
+	  <a href="<%= gh_url %>" target="_blank"><img src="https://gh-card.dev/repos/<%= gh_repo %>.svg"></a>
+	</div>
       <% end %>
     </div>
 

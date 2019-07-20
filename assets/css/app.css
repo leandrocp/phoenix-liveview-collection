@@ -2,3 +2,11 @@
 
 @import "./phoenix.css";
 @import "../../deps/phoenix_live_view/assets/css/live_view.css";
+
+.collection__name {
+  margin: 3rem 0 0 0;
+}
+
+.collection__gh_repo {
+  display: block;
+}

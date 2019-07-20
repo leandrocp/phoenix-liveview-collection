@@ -2,6 +2,7 @@ defmodule LiveViewCollection.Collection do
   use Agent
   require Logger
   alias LiveViewCollection.Twitter
+  alias LiveViewCollection.Github
 
   def start_link(_) do
     Agent.start_link(fn -> load_from_file() end, name: __MODULE__)
@@ -29,20 +30,27 @@ defmodule LiveViewCollection.Collection do
       |> Path.join("collection.yml")
       |> YamlElixir.read_from_file()
 
-    resolve_tweets(collection)
+    collection
+    |> resolve_tweets()
+    |> resolve_repos()
   end
 
   defp resolve_tweets(collection) do
-    resolve_item = fn %{"name" => name, "tweet_url" => tweet_url} ->
-      Logger.info("Loading #{name}")
-
+    resolve_item = fn %{"tweet_url" => tweet_url} = item ->
       %{"html" => html} = Twitter.tweet(tweet_url)
-
-      {name, html}
+      Map.put(item, "tweet_html", html)
     end
 
     collection
     |> Enum.map(&Task.async(fn -> resolve_item.(&1) end))
     |> Enum.map(&Task.await/1)
+  end
+
+  defp resolve_repos(collection) do
+    collection
+    |> Enum.reject(fn %{"github_url" => github_url} -> is_nil(github_url) end)
+    |> Enum.map(fn %{"github_url" => github_url} = item ->
+      Map.put(item, "github_repo", Github.repo(github_url))
+    end)
   end
 end
