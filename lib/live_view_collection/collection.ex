@@ -36,7 +36,8 @@ defmodule LiveViewCollection.Collection do
     end)
   end
 
-  defp do_paginate(collection, page, page_size) when is_nil(page) or page <= 0 or is_nil(page_size) or page_size <= 0 do
+  defp do_paginate(collection, page, page_size)
+       when is_nil(page) or page <= 0 or is_nil(page_size) or page_size <= 0 do
     do_paginate(collection, @default_page, @default_page_size)
   end
 
