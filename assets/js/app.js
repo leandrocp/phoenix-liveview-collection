@@ -6,5 +6,7 @@ let liveSocket = new LiveSocket("/live");
 liveSocket.connect();
 
 document.addEventListener('phx:update', () => {
-  twttr.widgets.load(document.getElementById("collection"));
+  setTimeout(() => {
+    twttr.widgets.load(document.getElementById("collection"));
+  }, 100);
 });

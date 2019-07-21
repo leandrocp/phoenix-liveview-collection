@@ -4,9 +4,6 @@ defmodule LiveViewCollectionWeb.CollectionView do
   alias LiveViewCollection.Collection
 
   def render_tweet(tweet_html) do
-    Logger.info(fn -> "==> render_tweet" end)
-    Logger.info(fn -> inspect(tweet_html) end)
-
     Phoenix.HTML.raw(tweet_html)
   end
 
