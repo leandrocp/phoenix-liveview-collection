@@ -25,7 +25,7 @@
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
       <%= render @view_module, @view_template, assigns %>
     </main>
-    <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>" charset="utf-8"></script>
+    <script type="text/javascript" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </body>
 </html>
