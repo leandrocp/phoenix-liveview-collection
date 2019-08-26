@@ -9,11 +9,11 @@
 </form>
 
 <div id="collection" class="flex flex-row flex-wrap content-around items-stretch">
-  <%= for %{"name" => name, "tweet_html" => tw_html, "github_url" => gh_url, "github_repo" => gh_repo} <- @collection do %>
+  <%= for %{"name" => name, "tweet_id" => tweet_id, "github_url" => gh_url, "github_repo" => gh_repo} <- @collection do %>
     <div class="w-full md:w-1/2 mb-16">
       <h2 class="text-4xl antialiased font-medium"><%= name %></h2>
-      <%= render_tweet(tw_html) %>
-      <a href="<%= gh_url %>" target="_blank" class="block"><img src="https://gh-card.dev/repos/<%= gh_repo %>.svg" style="width:510px"></a>
+      <div id="<%= tweet_id %>" phx-hook="Tweet"></div>
+      <a href="<%= gh_url %>" target="_blank" class="block"><img src="https://gh-card.dev/repos/<%= gh_repo %>.svg" style="width:500px"></a>
     </div>
   <% end %>
 </div>
@@ -30,7 +30,7 @@
 
 <form phx-change="change-page-size" class="float-right">
   <select name="page_size">
-    <%= for page_size <- [2, 5, 10, 25, 50] do %>
+    <%= for page_size <- [2, 4, 10, 20, 50] do %>
       <option value="<%= page_size %>" <%= page_size == @page_size && "selected" || "" %>>
         <%= page_size %> per page
        </option>

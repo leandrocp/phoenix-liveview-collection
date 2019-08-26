@@ -11,4 +11,10 @@ defmodule LiveViewCollection.Twitter do
 
     Jason.decode!(body)
   end
+
+  def id(tweet_url) do
+    tweet_url
+    |> String.split("/")
+    |> List.last()
+  end
 end

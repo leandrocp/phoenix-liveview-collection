@@ -59,8 +59,14 @@ defmodule LiveViewCollection.Collection do
 
   defp resolve_tweets(collection) do
     resolve_item = fn %{"tweet_url" => tweet_url} = item ->
-      %{"html" => html} = Twitter.tweet(tweet_url)
-      Map.put(item, "tweet_html", html)
+      %{"html" => tweet_html} = Twitter.tweet(tweet_url)
+
+      tweet = %{
+        "tweet_id" => Twitter.id(tweet_url),
+        "tweet_html" => tweet_html
+      }
+
+      Map.merge(item, tweet)
     end
 
     collection
