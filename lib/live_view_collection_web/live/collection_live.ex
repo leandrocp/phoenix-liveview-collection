@@ -1,7 +1,6 @@
 defmodule LiveViewCollectionWeb.CollectionLive do
   require Logger
   use Phoenix.LiveView
-  alias Phoenix.LiveView.Socket
   alias LiveViewCollection.Collection
   alias LiveViewCollectionWeb.CollectionView
 
@@ -24,15 +23,15 @@ defmodule LiveViewCollectionWeb.CollectionLive do
   end
 
   def handle_params(params, _url, socket) do
-    Logger.info(fn -> "handle_params: #{inspect(params)}" end)
+    Logger.debug(fn -> "handle_params: #{inspect(params)}" end)
 
     query = Map.get(params, "query", "")
     page = params |> Map.get("page", "1") |> String.to_integer()
     page_size = params |> Map.get("page_size", "10") |> String.to_integer()
     collection = Collection.resolve(query, page, page_size)
 
-    # https://github.com/phoenixframework/phoenix_live_view/issues/268
-    {:noreply, assign(socket, collection: collection, query: query, page: page, page_size: page_size)}
+    {:noreply,
+     assign(socket, collection: collection, query: query, page: page, page_size: page_size)}
   end
 
   defp redirect_attrs(socket, attrs) do
