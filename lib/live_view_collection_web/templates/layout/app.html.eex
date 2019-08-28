@@ -7,24 +7,28 @@
     <title>Collection of Phoenix LiveView Demos</title>
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
   </head>
-  <body>
-    <header>
-      <section class="container mx-auto">
-        <nav role="navigation">
-          <ul>
-            <li>LiveView Collection</li>
-          </ul>
-        </nav>
-        <a href="/" class="phx-logo">
-          <img src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>" alt="Phoenix Framework Logo"/>
-        </a>
-      </section>
-    </header>
-    <main role="main" id="main" class="container mx-auto">
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+  <body class="has-navbar-fixed-top">
+    <section class="section">
       <%= render @view_module, @view_template, assigns %>
-    </main>
+    </section>
+
+    <footer class="footer has-padding-0">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Phoenix LiveView Collection</strong> by <a href="https://twitter.com/leandrocesquini">Leandro CP</a>.
+          The source code is licensed <a href="https://github.com/leandrocp/phoenix-liveview-collection/blob/master/LICENSE">MIT</a>.
+        </p>
+        <p>
+          Check out <a href="https://phoenixframework.org">Phoenix Framework</a> for more information.
+        </p>
+        <p>
+          <a href="https://github.com/leandrocp/phoenix-liveview-collection">
+            <img height="24" width="24" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg"/>
+          </a>
+        </p>
+      </div>
+    </footer>
+
     <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>" charset="utf-8"></script>
     <script type="text/javascript" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </body>
