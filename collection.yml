@@ -203,3 +203,8 @@
 - name: "HackerNews clone"
   tweet_url: "https://twitter.com/ashishwadekar/status/1143596972345049088"
   github_url: "https://github.com/ashishwadekar/live_hacker_news"
+
+- name: "Tetris game"
+  tweet_url: "https://twitter.com/IamSandeshSoni/status/1164955363751235584"
+  github_url:
+  
