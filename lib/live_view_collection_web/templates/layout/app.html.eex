@@ -19,7 +19,8 @@
           The source code is licensed <a href="https://github.com/leandrocp/phoenix-liveview-collection/blob/master/LICENSE">MIT</a>.
         </p>
         <p>
-          Check out <a href="https://phoenixframework.org">Phoenix Framework</a> for more information.
+          Check out <a href="https://phoenixframework.org">Phoenix Framework</a> for more information,
+          and also <a href="https://anunknown.dev/articles/liveview-examples" target="_blank">LiveView examples</a> for another list.
         </p>
         <p>
           <a href="https://github.com/leandrocp/phoenix-liveview-collection">

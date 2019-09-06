@@ -5,6 +5,7 @@
 - name: "Flappy Bird Clone"
   tweet_url: "https://twitter.com/moomerman/status/1111711999963086849"
   github_url: "https://github.com/moomerman/flappy-phoenix"
+  demo_url: "https://flappy-phoenix.herokuapp.com/"
 
 - name: "Form with multiple steps and progression indicator"
   tweet_url: "https://twitter.com/_AlexGaribay/status/1111641314955849728"
@@ -21,10 +22,12 @@
 - name: "Hippo Game"
   tweet_url: "https://twitter.com/miladamilli/status/1109523142429626374"
   github_url: "https://github.com/miladamilli/hippo_game_live"
+  demo_url: "https://elegant-monstrous-planthopper.gigalixirapp.com/"
 
 - name: "WikiLiveView"
   tweet_url: "https://twitter.com/FelixKlement/status/1111654030948925440"
   github_url: "https://github.com/fklement/wikipedia_live_view"
+  demo_url: "https://darkslategray-dental-vicuna.gigalixirapp.com/"
 
 - name: "Undo"
   tweet_url: "https://twitter.com/joerichsen/status/1111653584322658304"
@@ -37,6 +40,7 @@
 - name: "Doom's fire"
   tweet_url: "https://twitter.com/allmonty/status/1110599037890281472"
   github_url: "https://github.com/allmonty/elixir-live-doom-fire"
+  demo_url: "https://elixir-doom-fire.herokuapp.com/"
 
 - name: "SVG LiveView"
   tweet_url: "https://twitter.com/lucianparvu/status/1109087821581742080"
@@ -45,6 +49,7 @@
 - name: "SVG LiveView 2"
   tweet_url: "https://twitter.com/mmmries/status/1117303569974042624"
   github_url: "https://github.com/mmmries/showoff/blob/master/lib/showoff_web/live/scratchpad_live.ex"
+  demo_url: "https://showoff.riesd.com/"
 
 - name: "Server-side calculator"
   tweet_url: "https://twitter.com/smeade/status/1107180735939543041"
@@ -81,18 +86,22 @@
 - name: "ObserverLive"
   tweet_url: "https://twitter.com/_zorbash/status/1112859727845904385"
   github_url: "https://github.com/zorbash/observer_live"
+  demo_url: "https://liveview.zorbash.com/"
 
 - name: "Match game"
   tweet_url: "https://twitter.com/toranb/status/1113406660175958017"
   github_url: "https://github.com/toranb/elixir-match/commit/bac39b8da84f3e672021e9d168589204a3a7682d"
+  demo_url: "https://elixirmatch.com/"
 
 - name: "BlackJack game"
   tweet_url: "https://twitter.com/DanCarlito/status/1113586521762930688"
   github_url: "https://github.com/dorilla/live_view_black_jack"
+  demo_url: "https://polite-angelic-beaver.gigalixirapp.com/"
 
 - name: "SeaBattle game"
   tweet_url: "https://twitter.com/AlexanderTukta1/status/1113722931845242883"
   github_url: "https://github.com/Sanchos01/Phoenix-Sea-Battle"
+  demo_url: "https://radiant-plateau-73240.herokuapp.com/"
 
 - name: "Rubular clone"
   tweet_url: "https://twitter.com/clarkkampfe/status/1110910055535312900"
@@ -101,6 +110,8 @@
 - name: "Real-time chat"
   tweet_url: "https://twitter.com/CassiusPacheco/status/1112015260880240640"
   github_url: "https://github.com/CassiusPacheco/live_chat"
+  demo_url: "https://www.dropbox.com/s/nvr1f2tkmyo41kr/live_chat.mp4"
+  image: "real_time_chat.png"
 
 - name: "Live HTML/CSS"
   tweet_url: "https://twitter.com/e110ca11272837c/status/1115181933539893248"
@@ -121,6 +132,8 @@
 - name: "BreakoutEx (breakout clone)"
   tweet_url: "https://twitter.com/ElixirLibHunt/status/1116946024617005056"
   github_url: "https://github.com/neslinesli93/breakoutex"
+  demo_url: "https://breakoutex.tommasopifferi.com/"
+  image: "breakoutex.png"
 
 - name: "Bike comparison"
   tweet_url: "https://twitter.com/andrielfn/status/1116874613584220160"
@@ -138,6 +151,8 @@
 - name: "Markdown Live"
   tweet_url: "https://twitter.com/elixirphoenix/status/1120774563611254785"
   github_url: "https://github.com/nickdichev/markdown-live"
+  demo_url: "http://markdown.dichev.io/"
+  image: "markdown_live.png"
 
 - name: "Ant Farm"
   tweet_url: "https://twitter.com/bigardone/status/1111161896177201152"
@@ -149,12 +164,14 @@
   gist_url: "https://gist.github.com/ponyesteves/372cf186665ab464413096fd3855f0ca"
 
 - name: "Chat App"
+  demo_url: "https://elixirschool.com/blog/live-view-with-presence/"
   tweet_url: "https://twitter.com/sm_debenedetto/status/1125024922030497792"
   github_url: "https://github.com/SophieDeBenedetto/phat"
 
 - name: "Functional data structures"
   tweet_url: "https://twitter.com/kayserzl/status/1124083298580430849"
   github_url: "https://github.com/zkayser/pfds_visualizations"
+  image: "functional_data_structures.png"
 
 - name: "RFID Reader"
   tweet_url: "https://twitter.com/vtim/status/1123982142684504068"
@@ -163,6 +180,8 @@
 - name: "LetterSoup Game (Boggle clone)"
   tweet_url: "https://twitter.com/_martinS_/status/1123775286863192065"
   github_url: "https://github.com/martinstannard/soup"
+  demo_url: "https://lettersoup.herokuapp.com/"
+  image: "letter_soup.png"
 
 - name: "Keeping notes"
   tweet_url: "https://twitter.com/joaomdmoura/status/1123051722497232897"
@@ -173,12 +192,16 @@
   github_url:
 
 - name: "Falling Tiles game"
+  demo_url: "https://falling-tiles.angelika.me/"
   tweet_url: "https://twitter.com/atyborska93/status/1127562362293293056"
   github_url: "https://github.com/angelikatyborska/falling_blocks"
+  image: "falling_tiles.png"
 
 - name: "Kanban board"
-  tweet_url: "https://twitter.com/hubertlepicki/status/1128234844780138496"
+  demo_url: "https://phoenix-live-view-kanban-board.herokuapp.com/"
+  tweet_url:
   github_url: "https://github.com/amberbit/board"
+  image: "kanban_board.png"
 
 - name: "Trivia Multiplayer"
   tweet_url: "https://twitter.com/ramortegui/status/1132037413453291520"
@@ -199,6 +222,8 @@
 - name: "Star Polygon demo"
   tweet_url: "https://twitter.com/mudphone/status/1140312333543043072"
   github_url:
+  demo_url: "https://www.pasdechocolat.com/starpolygon/"
+  image: "star_polygon.png"
 
 - name: "HackerNews clone"
   tweet_url: "https://twitter.com/ashishwadekar/status/1143596972345049088"
@@ -215,3 +240,75 @@
 - name: "Tic Tac Toe game"
   tweet_url: "https://twitter.com/Kanmaniselvan/status/1169395438597869569"
   github_url:
+
+- name: "Bear Game"
+  tweet_url:
+  github_url: "https://github.com/nickdichev/markdown-live"
+  demo_url: "http://palegoldenrod-grown-ibis.gigalixirapp.com/bear_game"
+  image: "bear_game.png"
+
+- name: "Bear Necessities"
+  tweet_url:
+  github_url: "https://github.com/DefactoSoftware/BearNecessities"
+  demo_url: "https://unbearable.nl/"
+  image: "bear_necessities.png"
+
+- name: "Milwaukee Property Search"
+  tweet_url:
+  github_url: "https://github.com/mitchellhenke/mprop"
+  demo_url: "https://mprop.mitchellhenke.com/"
+  image: "milwaukee_property_search.png"
+
+- name: "Pixels with Frenemies"
+  tweet_url:
+  github_url: "https://github.com/JohnB/phoenix_live_view_example"
+  demo_url: "https://stormy-earth-96381.herokuapp.com/collaborative_canvas"
+  image: "pixels_with_frenemies.png"
+
+- name: "Table Filter"
+  tweet_url:
+  github_url: "https://github.com/imartinat/phoenix_live_view_tablefilter"
+  demo_url: "https://medium.com/@imartinat/table-filter-with-phoenix-liveview-cb30508e9fc0"
+  image: "table_filter.png"
+
+- name: "Empex SVG Logo"
+  tweet_url:
+  github_url: "https://github.com/empex2019liveview/empexlogo"
+  demo_url: "https://anunknown.dev/demo/empex"
+  image: "empex.png"
+
+- name: "Hangman Game"
+  tweet_url:
+  github_url: "https://github.com/empex2019liveview/hangman"
+  demo_url: "https://anunknown.dev/demo/hangman"
+  image: "hangman.png"
+
+- name: "Towers of Hanoi Game"
+  tweet_url:
+  github_url: "https://github.com/empex2019liveview/hanoi"
+  demo_url: "https://anunknown.dev/demo/hanoi"
+  image: "towers_of_hanoi.png"
+
+- name: "Debounce"
+  tweet_url:
+  github_url:
+  demo_url: "https://dev.to/tizpuppi/phoenix-live-view-debounce-4icf"
+  image: "debounce.png"
+
+- name: "Blast Game (Asteroids clone)"
+  tweet_url:
+  github_url: "https://github.com/team-alembic/lambdajam-blast"
+  demo_url: "https://blast.alembic.com.au/"
+  image: "blast.png"
+
+- name: "Trivia"
+  tweet_url:
+  github_url: "https://github.com/ramortegui/phoenix_trivia"
+  demo_url: "https://phx-trivia.gigalixirapp.com/"
+  image: "trivia.png"
+
+- name: "Conways Game of Life"
+  tweet_url:
+  github_url: "https://github.com/horneber/phoenix-lifeview-conway"
+  demo_url: "https://intense-oasis-66457.herokuapp.com/"
+  image: "conways_game_of_life.png"

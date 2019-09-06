@@ -58,22 +58,30 @@ defmodule LiveViewCollection.Collection do
   end
 
   defp resolve_tweets(collection) do
-    resolve_item = fn %{"tweet_url" => tweet_url} = item ->
-      case Twitter.tweet(tweet_url) do
-        {:ok, tweet} ->
-          %{"html" => tweet_html} = tweet
+    unavailable_tweet = fn item ->
+      Map.merge(item, %{
+        "tweet_id" => nil,
+        "tweet_html" => nil
+      })
+    end
 
-          tweet = %{
-            "tweet_id" => Twitter.id(tweet_url),
-            "tweet_html" => tweet_html
-          }
+    resolve_item = fn
+      %{"tweet_url" => tweet_url} = item when is_nil(tweet_url) ->
+        unavailable_tweet.(item)
 
-          Map.merge(item, tweet)
+      %{"tweet_url" => tweet_url} = item ->
+        case Twitter.tweet(tweet_url) do
+          {:ok, tweet} ->
+            tweet = %{
+              "tweet_id" => Twitter.id(tweet_url),
+              "tweet_html" => tweet["html"]
+            }
 
-        {:error, _} ->
-          Logger.debug("Marking tweet as error.")
-          :error
-      end
+            Map.merge(item, tweet)
+
+          {:error, _} ->
+            :error
+        end
     end
 
     collection
@@ -95,8 +103,12 @@ defmodule LiveViewCollection.Collection do
 
   defp resolve_search_field(collection) do
     collection
-    |> Enum.map(fn %{"name" => name, "tweet_html" => tw_html} = item ->
-      Map.put(item, "search", name <> " " <> tw_html)
+    |> Enum.map(fn
+      %{"name" => name, "tweet_html" => tw_html} = item when is_binary(tw_html) ->
+        Map.put(item, "search", name <> " " <> tw_html)
+
+      %{"name" => name} = item ->
+        Map.put(item, "search", name)
     end)
   end
 end

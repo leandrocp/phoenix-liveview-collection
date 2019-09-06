@@ -40,10 +40,16 @@
   <%= for row <- Enum.chunk_every(@collection, 2) do %>
     <div class="tile is-ancestor">
       <div class="tile is-parent">
-      <%= for %{"name" => name, "tweet_id" => tweet_id, "github_url" => gh_url, "github_repo" => gh_repo} <- row do %>
+      <%= for %{"name" => name, "tweet_id" => tweet_id, "github_url" => gh_url, "github_repo" => gh_repo} = item <- row do %>
         <div class="tile is-child">
           <h2 class="is-size-4"><%= name %></p>
-          <div id="<%= tweet_id %>" phx-hook="Tweet"></div>
+          <%= demo_url(item) %>
+          <div>
+            <%= image(item, @socket) %>
+          </div>
+          <%= if tweet_id do %>
+            <div id="<%= tweet_id %>" phx-hook="Tweet"></div>
+          <% end %>
           <%= if gh_repo do %>
             <a href="<%= gh_url %>" target="_blank" class="block"><img src="https://gh-card.dev/repos/<%= gh_repo %>.svg" style="width:500px"></a>
           <% end %>
