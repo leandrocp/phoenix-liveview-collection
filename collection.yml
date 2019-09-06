@@ -176,9 +176,9 @@
   tweet_url: "https://twitter.com/atyborska93/status/1127562362293293056"
   github_url: "https://github.com/angelikatyborska/falling_blocks"
 
-- name: "Kanban board"
-  tweet_url: "https://twitter.com/hubertlepicki/status/1128234844780138496"
-  github_url: "https://github.com/amberbit/board"
+# - name: "Kanban board"
+#   tweet_url: "https://twitter.com/hubertlepicki/status/1128234844780138496"
+#   github_url: "https://github.com/amberbit/board"
 
 - name: "Trivia Multiplayer"
   tweet_url: "https://twitter.com/ramortegui/status/1132037413453291520"
@@ -207,4 +207,3 @@
 - name: "Tetris game"
   tweet_url: "https://twitter.com/IamSandeshSoni/status/1164955363751235584"
   github_url:
-  
