@@ -207,3 +207,11 @@
 - name: "Tetris game"
   tweet_url: "https://twitter.com/IamSandeshSoni/status/1164955363751235584"
   github_url:
+
+- name: "Broadway Dashboard"
+  tweet_url: "https://twitter.com/MarlusSaraiva/status/1167821259603763205"
+  github_url:
+
+- name: "Tic Tac Toe game"
+  tweet_url: "https://twitter.com/Kanmaniselvan/status/1169395438597869569"
+  github_url:
