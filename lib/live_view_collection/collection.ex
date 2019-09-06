@@ -59,26 +59,37 @@ defmodule LiveViewCollection.Collection do
 
   defp resolve_tweets(collection) do
     resolve_item = fn %{"tweet_url" => tweet_url} = item ->
-      %{"html" => tweet_html} = Twitter.tweet(tweet_url)
+      case Twitter.tweet(tweet_url) do
+        {:ok, tweet} ->
+          %{"html" => tweet_html} = tweet
 
-      tweet = %{
-        "tweet_id" => Twitter.id(tweet_url),
-        "tweet_html" => tweet_html
-      }
+          tweet = %{
+            "tweet_id" => Twitter.id(tweet_url),
+            "tweet_html" => tweet_html
+          }
 
-      Map.merge(item, tweet)
+          Map.merge(item, tweet)
+
+        {:error, _} ->
+          Logger.debug("Marking tweet as error.")
+          :error
+      end
     end
 
     collection
     |> Enum.map(&Task.async(fn -> resolve_item.(&1) end))
     |> Enum.map(&Task.await/1)
+    |> Enum.reject(&(&1 == :error))
   end
 
   defp resolve_repos(collection) do
     collection
-    |> Enum.reject(fn %{"github_url" => github_url} -> is_nil(github_url) end)
-    |> Enum.map(fn %{"github_url" => github_url} = item ->
-      Map.put(item, "github_repo", Github.repo(github_url))
+    |> Enum.map(fn
+      %{"github_url" => github_url} = item when is_nil(github_url) ->
+        Map.put(item, "github_repo", nil)
+
+      %{"github_url" => github_url} = item ->
+        Map.put(item, "github_repo", Github.repo(github_url))
     end)
   end
 

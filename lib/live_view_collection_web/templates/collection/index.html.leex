@@ -17,7 +17,7 @@
           type="text"
           name="query"
           value="<%= @query %>"
-          placeholder="Search..."
+          placeholder="Search <%= @collection_size %> demos"
           class="input is-medium is-rounded"
         />
       </form>
@@ -44,7 +44,9 @@
         <div class="tile is-child">
           <h2 class="is-size-4"><%= name %></p>
           <div id="<%= tweet_id %>" phx-hook="Tweet"></div>
-          <a href="<%= gh_url %>" target="_blank" class="block"><img src="https://gh-card.dev/repos/<%= gh_repo %>.svg" style="width:500px"></a>
+          <%= if gh_repo do %>
+            <a href="<%= gh_url %>" target="_blank" class="block"><img src="https://gh-card.dev/repos/<%= gh_repo %>.svg" style="width:500px"></a>
+          <% end %>
         </div>
       <% end %>
       </div>

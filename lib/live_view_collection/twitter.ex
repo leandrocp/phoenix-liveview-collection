@@ -9,7 +9,16 @@ defmodule LiveViewCollection.Twitter do
 
     Logger.info("#{tweet_url} => #{status_code}")
 
-    Jason.decode!(body)
+    body
+    |> Jason.decode()
+    |> case do
+      {:ok, tweet} ->
+        {:ok, tweet}
+
+      {:error, _body} ->
+        Logger.debug("^ error fetching this tweet ^")
+        {:error, :error_fetching_tweet}
+    end
   end
 
   def id(tweet_url) do

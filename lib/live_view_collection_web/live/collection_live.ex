@@ -7,7 +7,14 @@ defmodule LiveViewCollectionWeb.CollectionLive do
   def render(assigns), do: CollectionView.render("index.html", assigns)
 
   def mount(_session, socket) do
-    {:ok, assign(socket, collection: Collection.all(), query: "", page: 1, page_size: 10)}
+    {:ok,
+     assign(socket,
+       collection: Collection.all(),
+       collection_size: length(Collection.all()),
+       query: "",
+       page: 1,
+       page_size: 10
+     )}
   end
 
   def handle_event("search", %{"query" => query}, socket) do
