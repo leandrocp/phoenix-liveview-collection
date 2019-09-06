@@ -230,8 +230,10 @@
   github_url: "https://github.com/ashishwadekar/live_hacker_news"
 
 - name: "Tetris game"
-  tweet_url: "https://twitter.com/IamSandeshSoni/status/1164955363751235584"
+  tweet_url: "https://twitter.com/IamSandeshSoni/status/1167036472924360705"
   github_url:
+  demo_url: "http://tetris-kachori.gigalixirapp.com/"
+  image: "tetris.png"
 
 - name: "Broadway Dashboard"
   tweet_url: "https://twitter.com/MarlusSaraiva/status/1167821259603763205"
@@ -312,3 +314,23 @@
   github_url: "https://github.com/horneber/phoenix-lifeview-conway"
   demo_url: "https://intense-oasis-66457.herokuapp.com/"
   image: "conways_game_of_life.png"
+
+- name: "Particle System on HTML5 Canvas"
+  tweet_url: "https://twitter.com/petecorey/status/1167949691511640064"
+  github_url: "https://github.com/pcorey/live_canvas"
+  demo_url: "https://frozen-coast-73544.herokuapp.com/"
+
+- name: "Ecto Associations in LiveView"
+  tweet_url: "https://twitter.com/acangiano/status/1167484998867398657"
+  github_url:
+  demo_url: "https://dennisbeatty.com/2019/08/20/ecto-associations-in-phoenix-liveview-one-to-many.html"
+
+- name: "Quick Chat Engine"
+  tweet_url: "https://twitter.com/FiqusCoop/status/1166728670704222208"
+  github_url: "https://github.com/fiqus/lqchatex"
+  demo_url: "https://lqchatex.fiqus.coop/"
+  image: "quick_chat_engine.png"
+
+- name: "Sudoku solver"
+  tweet_url: "https://twitter.com/dsdshcym/status/1154693783771963393"
+  github_url: "https://github.com/dsdshcym/phoenix_live_view_sudoku"
