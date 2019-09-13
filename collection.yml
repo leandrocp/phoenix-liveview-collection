@@ -339,7 +339,7 @@
   tweet_url: "https://twitter.com/leandrocesquini/status/1166519369612038144"
   github_url: "https://github.com/leandrocp/phoenix-liveview-collection"
   demo_url: "https://live-view-collection.herokuapp.com/"
-  
+
 - name: "Zero Cards Game"
   tweet_url: "https://twitter.com/MRonErlang/status/1172084355063304197"
   github_url: "https://github.com/altenwald/zero"
@@ -348,3 +348,4 @@
   tweet_url: "https://twitter.com/aravindavk/status/1167479502747783169"
   github_url:
   demo_url: "https://aravindavk.in/blog/elixir-phoenix-liveview-gluster-dashboard/"
+  image: "gluster_dashboard.gif"
