@@ -350,3 +350,7 @@
   github_url:
   demo_url: "https://aravindavk.in/blog/elixir-phoenix-liveview-gluster-dashboard/"
   image: "gluster_dashboard.gif"
+
+- name: "SQL Client"
+  tweet_url: "https://twitter.com/ian_sparky/status/1172510067867967490"
+  github_url:
