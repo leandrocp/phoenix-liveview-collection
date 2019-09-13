@@ -339,6 +339,7 @@
   tweet_url: "https://twitter.com/leandrocesquini/status/1166519369612038144"
   github_url: "https://github.com/leandrocp/phoenix-liveview-collection"
   demo_url: "https://live-view-collection.herokuapp.com/"
+  image: "liveview_collection.png"
 
 - name: "Zero Cards Game"
   tweet_url: "https://twitter.com/MRonErlang/status/1172084355063304197"
