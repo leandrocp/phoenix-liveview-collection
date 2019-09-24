@@ -359,3 +359,7 @@
   tweet_url: "https://twitter.com/_nboisvert/status/1173414629520871424"
   github_url:
   demo_url: "https://unox.sandbox.nboisvert.com/"
+
+- name: "Kanban board"
+  tweet_url: "https://twitter.com/IamSandeshSoni/status/1175888883264835584"
+  github_url: "https://github.com/spawnfest/Beam_India/tree/master/server"
