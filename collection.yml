@@ -363,3 +363,7 @@
 - name: "Kanban board"
   tweet_url: "https://twitter.com/IamSandeshSoni/status/1175888883264835584"
   github_url: "https://github.com/spawnfest/Beam_India/tree/master/server"
+
+- name: "Markdown to Slideshow"
+  tweet_url: "https://twitter.com/pablobrud/status/1175918144721948672"
+  github_url: "https://github.com/spawnfest/prexent"
