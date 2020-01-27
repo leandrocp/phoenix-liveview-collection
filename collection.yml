@@ -372,4 +372,8 @@
   tweet_url: "https://twitter.com/yujiyokoo/status/1221629234629599234"
   github_url: "https://gitlab.com/yujiyokoo/block_puzzle_live_view"
   demo_url: "https://exciting-ancient-squamata.gigalixirapp.com/game"
+
+- name: "State Machine Multi-step Form"
+  tweet_url: "https://twitter.com/entropealab/status/1202673722404081664"
+  github_url: "https://github.com/entone/states_language_live_view"
   
