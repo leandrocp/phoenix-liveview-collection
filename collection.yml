@@ -367,3 +367,9 @@
 - name: "Markdown to Slideshow"
   tweet_url: "https://twitter.com/pablobrud/status/1175918144721948672"
   github_url: "https://github.com/spawnfest/prexent"
+  
+- name: "Block Puzzle"
+  tweet_url: "https://twitter.com/yujiyokoo/status/1221629234629599234"
+  github_url: "https://gitlab.com/yujiyokoo/block_puzzle_live_view"
+  demo_url: "https://exciting-ancient-squamata.gigalixirapp.com/game"
+  
