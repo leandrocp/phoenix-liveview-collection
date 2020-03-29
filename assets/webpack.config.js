@@ -1,24 +1,27 @@
 const path = require('path');
 const glob = require('glob');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = (env, options) => ({
   optimization: {
     minimizer: [
-      new UglifyJsPlugin({ cache: true, parallel: true, sourceMap: false }),
+      new TerserPlugin({ cache: true, parallel: true, sourceMap: devMode }),
       new OptimizeCSSAssetsPlugin({})
     ]
   },
   entry: {
-      './js/app.js': ['./js/app.js'].concat(glob.sync('./vendor/**/*.js'))
+    'app': glob.sync('./vendor/**/*.js').concat(['./js/app.js'])
   },
   output: {
-    filename: 'app.js',
-    path: path.resolve(__dirname, '../priv/static/js')
+    filename: '[name].js',
+    path: path.resolve(__dirname, '../priv/static/js'),
+    publicPath: '/js/'
   },
+  devtool: devMode ? 'source-map' : undefined,
   module: {
     rules: [
       {
@@ -31,15 +34,21 @@ module.exports = (env, options) => ({
       {
         test: /\.(scss|css)$/,
         use: [
-          {loader: MiniCssExtractPlugin.loader},
-          'css-loader',
-          'sass-loader',
-        ],
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: { sourceMap: devMode }
+          },
+          {
+            loader: 'sass-loader',
+            options: { sourceMap: devMode }
+          },
+        ]
       }
     ]
   },
   plugins: [
-    new MiniCssExtractPlugin({filename: '../css/app.css'}),
+    new MiniCssExtractPlugin({ filename: '../css/app.css' }),
     new CopyWebpackPlugin([{ from: 'static/', to: '../' }])
   ]
 });

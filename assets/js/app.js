@@ -1,16 +1,23 @@
-import css from "../css/app.scss"
-import "phoenix_html"
-import LiveSocket from "phoenix_live_view"
+import css from "../css/app.scss";
+import { Socket } from "phoenix";
+import LiveSocket from "phoenix_live_view";
 
-let Hooks = {}
+let Hooks = {};
+
 Hooks.Tweet = {
-  mounted(){
+  mounted() {
     twttr.widgets.createTweet(this.el.id, this.el);
   },
-  updated(){
+  updated() {
     twttr.widgets.createTweet(this.el.id, this.el);
-  }
-}
+  },
+};
 
-let liveSocket = new LiveSocket("/live", {hooks: Hooks});
+let csrfToken = document
+  .querySelector("meta[name='csrf-token']")
+  .getAttribute("content");
+let liveSocket = new LiveSocket("/live", Socket, {
+  params: { _csrf_token: csrfToken },
+  hooks: Hooks,
+});
 liveSocket.connect();

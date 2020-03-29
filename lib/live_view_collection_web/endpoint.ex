@@ -1,11 +1,13 @@
 defmodule LiveViewCollectionWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :live_view_collection
 
-  socket "/socket", LiveViewCollectionWeb.UserSocket,
-    websocket: [timeout: 45_000],
-    longpoll: false
+  @session_options [
+    store: :cookie,
+    key: "_live_view_collection_key",
+    signing_salt: "Aq40ZW0/"
+  ]
 
-  socket "/live", Phoenix.LiveView.Socket, websocket: [timeout: 45_000]
+  socket "/live", Phoenix.LiveView.Socket, websocket: [connect_info: [session: @session_options]]
 
   # Serve at "/" the static files from "priv/static" directory.
   #
@@ -39,10 +41,7 @@ defmodule LiveViewCollectionWeb.Endpoint do
   # The session will be stored in the cookie and signed,
   # this means its contents can be read but not tampered with.
   # Set :encryption_salt if you would also like to encrypt it.
-  plug Plug.Session,
-    store: :cookie,
-    key: "_live_view_collection_key",
-    signing_salt: "Aq40ZW0/"
+  plug Plug.Session, @session_options
 
   plug LiveViewCollectionWeb.Router
 end

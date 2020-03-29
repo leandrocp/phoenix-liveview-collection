@@ -1,12 +1,12 @@
 defmodule LiveViewCollectionWeb.CollectionLive do
   require Logger
-  use Phoenix.LiveView
+  use LiveViewCollectionWeb, :live_view
   alias LiveViewCollection.Collection
   alias LiveViewCollectionWeb.CollectionView
 
   def render(assigns), do: CollectionView.render("index.html", assigns)
 
-  def mount(_session, socket) do
+  def mount(_params, _session, socket) do
     {:ok,
      assign(socket,
        collection: Collection.all(),
@@ -47,12 +47,12 @@ defmodule LiveViewCollectionWeb.CollectionLive do
     page_size = attrs[:page_size] || socket.assigns[:page_size]
 
     path =
-      LiveViewCollectionWeb.Router.Helpers.live_path(socket, __MODULE__,
+      Routes.live_path(socket, __MODULE__,
         query: query,
         page: page,
         page_size: page_size
       )
 
-    live_redirect(socket, to: path)
+    push_patch(socket, to: path)
   end
 end
