@@ -1,0 +1,15 @@
+- name: "Chris McCord examples"
+  tweet_url: "https://twitter.com/chris_mccord/status/1106291353670045696"
+  github_url: "https://github.com/chrismccord/phoenix_live_view_example"
+
+- name: "Chris McCord examples"
+  tweet_url: "https://twitter.com/chris_mccord/status/1106291353670045696"
+  github_url:
+
+- name: "Chris McCord examples"
+  tweet_url:
+  github_url: "https://github.com/chrismccord/phoenix_live_view_example"
+
+- name: "Chris McCord examples"
+  tweet_url:
+  github_url:

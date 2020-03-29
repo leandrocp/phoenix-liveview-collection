@@ -8,3 +8,5 @@ config :live_view_collection, LiveViewCollectionWeb.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
+
+config :live_view_collection, collection_yml_path: "./test/support/collection.yml"

@@ -11,3 +11,4 @@ npm-debug.log
 /assets/node_modules/
 /priv/static/
 .elixir_ls/
+.projections.json
