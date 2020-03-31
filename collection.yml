@@ -385,3 +385,7 @@
 - name: "Perlin Noise & colors"
   tweet_url: "https://twitter.com/miladamilli/status/1227955137659985920"
   github_url:
+  
+- name: Phoenix LiveView with AlpineJS
+  tweet_url: https://twitter.com/FullstackPhoen1/status/1245039761150050304
+  demo_url: https://fullstackphoenix.com/tutorials/combine-phoenix-liveview-with-alpine-js
