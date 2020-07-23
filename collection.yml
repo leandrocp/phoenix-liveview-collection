@@ -438,3 +438,11 @@
   tweet_url: "https://twitter.com/clarkware/status/1281277782937554944"
   demo_url: "https://pragmaticstudio.com/courses/phoenix-liveview"
 
+- name: "Autocomplete with Alpine.js"
+  tweet_url: "https://twitter.com/benvp_/status/1285495072209940481"
+  demo_url: "https://medium.com/@benvp/build-a-performat-autocomplete-using-phoenix-liveview-and-alpine-js-8bcbbed17ba7"
+
+- name: "Modals with Tailwind CSS and Alpine.js"
+  tweet_url: "https://twitter.com/pthompson/status/1285636903115673602"
+  demo_url: "http://blog.pthompson.org/liveview-tailwind-css-alpine-js-modal"
+
