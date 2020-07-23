@@ -386,6 +386,55 @@
   tweet_url: "https://twitter.com/miladamilli/status/1227955137659985920"
   github_url:
   
-- name: Phoenix LiveView with AlpineJS
-  tweet_url: https://twitter.com/FullstackPhoen1/status/1245039761150050304
-  demo_url: https://fullstackphoenix.com/tutorials/combine-phoenix-liveview-with-alpine-js
+- name: "Phoenix LiveView with AlpineJS"
+  tweet_url: "https://twitter.com/FullstackPhoen1/status/1245039761150050304"
+  demo_url: "https://fullstackphoenix.com/tutorials/combine-phoenix-liveview-with-alpine-js"
+
+- name: "Card game"
+  tweet_url:  "https://twitter.com/benfreu/status/1251088437115052032"
+  demo_url: "https://ohell.benfreu.dev/"
+
+- name: "Real-time Twitter-like microblog"
+  tweet_url: "https://twitter.com/CassiusPacheco/status/1252597145565147137"
+  github_url: "https://github.com/CassiusPacheco/ex_micro_blog"
+  demo_url: "https://exmicroblog.herokuapp.com/"
+
+- name: "LiveView with Temple template library"
+  tweet_url: "https://twitter.com/shritesh/status/1252016488074088448"
+
+- name: "Real-time SVG chart"
+  tweet_url: "https://twitter.com/stevegraham/status/1255566636838338561"
+
+- name: "SVG state machine"
+  tweet_url: "https://twitter.com/antoine_reyt/status/1255875223011889157"
+  github_url: "https://github.com/antoinereyt/gen_statem_meetup"
+
+- name: "DatePicker"
+  tweet_url: "https://twitter.com/andyjones11/status/1257351074970812416"
+
+- name: "Regext tester"
+  tweet_url: "https://twitter.com/bernheisel/status/1262267358720266241"
+  demo_url: "https://elixir-utilities.herokuapp.com"
+
+- name:  "LiveView diff algorithm"
+  tweet_url: "https://twitter.com/_fifwb/status/1276954973830393858"
+
+- name: "Real-time accessibility and HTML validator"
+  tweet_url: "https://twitter.com/jaimeiniesta/status/1279103234674700290"
+  demo_url: "https://vimeo.com/435134538"
+
+- name: "Bookmarking with Azure Cognitive"
+  tweet_url: "https://twitter.com/_clem/status/1282457648923844609"
+
+- name: "Generative art"
+  tweet_url: "https://twitter.com/miladamilli/status/1275775763329974273"
+  github_url: "https://github.com/miladamilli/artcode_poisson_colors"
+  demo_url: "https://art-code.herokuapp.com/poisson-colors"
+
+- name: "Spotify client"
+  tweet_url: "https://twitter.com/cloud8421/status/1285993792605237249"
+
+- name: "Free LiveView course"
+  tweet_url: "https://twitter.com/clarkware/status/1281277782937554944"
+  demo_url: "https://pragmaticstudio.com/courses/phoenix-liveview"
+
