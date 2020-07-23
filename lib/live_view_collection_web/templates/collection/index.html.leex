@@ -77,11 +77,11 @@
           <%= for page <- number_of_pages(assigns) do %>
             <%= if page == @page do %>
               <li>
-                <a href="#" class="pagination-link is-current" aria-label="Page <%= page %>" aria-current="page" phx-click="goto-page" phx-value=<%= page %>><%= page %></a>
+                <a href="#" class="pagination-link is-current" aria-label="Page <%= page %>" aria-current="page" phx-click="goto-page" phx-value-page=<%= page %>><%= page %></a>
               </li>
             <% else %>
               <li>
-                <a href="#" class="pagination-link" aria-label="Goto page <%= page %>" phx-click="goto-page" phx-value=<%= page %>><%= page %></a>
+                <a href="#" class="pagination-link" aria-label="Goto page <%= page %>" phx-click="goto-page" phx-value-page=<%= page %>><%= page %></a>
               </li>
             <% end %>
           <% end %>

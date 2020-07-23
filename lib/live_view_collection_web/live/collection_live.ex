@@ -21,7 +21,7 @@ defmodule LiveViewCollectionWeb.CollectionLive do
     {:noreply, redirect_attrs(socket, query: query, page: 1)}
   end
 
-  def handle_event("goto-page", page, socket) do
+  def handle_event("goto-page", %{"page" => page}, socket) do
     {:noreply, redirect_attrs(socket, page: String.to_integer(page))}
   end
 
