@@ -60,7 +60,7 @@ defmodule LiveViewCollection.Twitter do
 
     collection
     |> Enum.map(&Task.async(fn -> resolve_item.(&1) end))
-    |> Enum.map(&Task.await/1)
+    |> Enum.map(fn task -> Task.await(task, 10_000) end)
     |> Enum.reject(&is_nil(&1))
   end
 end
