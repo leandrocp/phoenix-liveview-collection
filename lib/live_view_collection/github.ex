@@ -50,6 +50,9 @@ defmodule LiveViewCollection.Github do
   def resolve(collection) do
     collection
     |> Enum.map(fn
+      nil ->
+        :error
+
       %{"github_url" => github_url} = item ->
         gh = %{
           "github_url" => url(github_url),
@@ -58,8 +61,13 @@ defmodule LiveViewCollection.Github do
 
         Map.merge(item, gh)
 
-      _ ->
-        :error
+      item ->
+        gh = %{
+          "github_url" => nil,
+          "github_repo" => nil
+        }
+
+        Map.merge(item, gh)
     end)
     |> Enum.filter(&is_map(&1))
   end

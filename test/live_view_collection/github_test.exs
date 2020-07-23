@@ -28,7 +28,7 @@ defmodule LiveViewCollection.GithubTest do
   end
 
   test "resolve" do
-    assert [a | [b | []]] =
+    assert [a, b, c, d] =
              Github.resolve([
                %{
                  "name" => "Chris McCord examples",
@@ -51,6 +51,12 @@ defmodule LiveViewCollection.GithubTest do
     assert a["github_repo"] == "chrismccord/phoenix_live_view_example"
 
     assert b["github_url"] == "https://github.com/chrismccord/phoenix_live_view_example"
-    assert a["github_repo"] == "chrismccord/phoenix_live_view_example"
+    assert b["github_repo"] == "chrismccord/phoenix_live_view_example"
+
+    refute c["github_url"]
+    refute c["github_repo"]
+
+    refute d["github_url"]
+    refute d["github_repo"]
   end
 end
