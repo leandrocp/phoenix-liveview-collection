@@ -8,6 +8,8 @@ defmodule LiveViewCollection.Application do
   def start(_type, _args) do
     # List all child processes to be supervised
     children = [
+      # Start the PubSub system
+      {Phoenix.PubSub, name: LiveViewCollection.PubSub},
       # Start the endpoint when the application starts
       LiveViewCollectionWeb.Endpoint,
       # Starts a worker by calling: LiveViewCollection.Worker.start_link(arg)

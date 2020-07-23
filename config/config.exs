@@ -12,7 +12,7 @@ config :live_view_collection, LiveViewCollectionWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "yXIQnFB4JlRLfTgs0EFrm71asMhTg8yc1zkIovom1vk0dUyJkFS+kBWfdkPwYiCi",
   render_errors: [view: LiveViewCollectionWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: LiveViewCollection.PubSub, adapter: Phoenix.PubSub.PG2],
+  pubsub_server: LiveViewCollection.PubSub,
   live_view: [
     signing_salt: "sJKdegQfK+A4Fe9vFWhn0JuYKK/+GaRB"
   ]
