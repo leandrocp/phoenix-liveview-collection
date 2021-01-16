@@ -40,6 +40,7 @@ defmodule LiveViewCollectionWeb.Router do
   }
 
   pipeline :browser do
+    plug LiveViewCollectionWeb.Plugs.RedirectToGigalixir
     plug :accepts, ["html"]
     plug :fetch_session
     plug :fetch_live_flash
