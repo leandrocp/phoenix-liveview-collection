@@ -32,17 +32,17 @@ defmodule LiveViewCollection.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:floki, "~> 0.27", only: :test},
       {:gettext, "~> 0.18"},
       {:jason, "~> 1.2"},
       {:mojito, "~> 0.7"},
-      {:phoenix, "~> 1.5.4"},
+      {:phoenix, "~> 1.5"},
       {:phoenix_pubsub, "~> 2.0"},
       {:phoenix_html, "~> 2.14"},
-      {:phoenix_live_view, "~> 0.14.2"},
-      {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:plug_cowboy, "~> 2.3"},
-      {:yaml_elixir, "~> 2.4"}
+      {:phoenix_live_view, "~> 0.15"},
+      {:plug_cowboy, "~> 2.4"},
+      {:yaml_elixir, "~> 2.5"},
+      {:phoenix_live_reload, "~> 1.3", only: :dev},
+      {:floki, "~> 0.29", only: :test}
     ]
   end
 end
