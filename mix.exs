@@ -35,6 +35,7 @@ defmodule LiveViewCollection.MixProject do
       {:gettext, "~> 0.18"},
       {:jason, "~> 1.2"},
       {:mojito, "~> 0.7"},
+      {:cors_plug, "~> 2.0"},
       {:phoenix, "~> 1.5"},
       {:phoenix_pubsub, "~> 2.0"},
       {:phoenix_html, "~> 2.14"},

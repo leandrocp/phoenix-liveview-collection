@@ -43,5 +43,7 @@ defmodule LiveViewCollectionWeb.Endpoint do
   # Set :encryption_salt if you would also like to encrypt it.
   plug Plug.Session, @session_options
 
+  plug CORSPlug, origin: ["https://syndication.twitter.com"]
+
   plug LiveViewCollectionWeb.Router
 end
